@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="weather-box">
+      <div class="search-bar">
+        <input type="text" id="search" class="search" placeholder="Enter the city">
+        <button class="search-btn" id="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="error" id="error">
+        Invalid City Name
+      </div>
+
+      <div class="weather-profile" id="weather-profile">
+        <div class="weather-img">
+          <img src="data/clear.png" alt="w" class="cloud-img">
+        </div>
+
+        <div class="temp-data">
+          <h1>22&deg;c</h1>
+        </div>
+
+        <div class="city-name">
+          <h2>Bengaluru</h2>
+        </div>
+
+        <div class="weather-data">
+          <div class="humid-data data-flex">
+            <i class="fa-solid fa-water"></i>
+            <div class="humid-value">
+              <h3>53%</h3>
+              <h4>Humidity</h4>
+            </div>
+          </div>
+
+          <div class="wind-data data-flex">
+            <i class="fa-solid fa-wind"></i>
+            <div class="wind-value">
+              <h3>5.66 km/h</h3>
+              <h4>Wind Speed</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="script.js"></script>
+</body>
+
+</html>
