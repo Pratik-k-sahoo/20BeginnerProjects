@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #0d0119;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  width: auto;
+  /* border: 2px solid white; */
+  margin: 15px auto;
+}
+
+.heading {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+img {
+  margin: 10px;
+  width: 120px;
+  margin-right: 120px;
+  border-radius: 50%;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 30px;
+}
+
+.input-container {
+  max-width: 1000px;
+  display: flex;
+  background: rgb(38, 33, 44);
+  flex-direction: column;
+  width: auto;
+  margin: 20px auto;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.title-container,
+.action-container {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  overflow-x: auto;
+}
+
+label {
+  font-weight: 900;
+}
+
+.title {
+  width: 300px;
+  height: 30px;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 10px 0;
+  font-weight: 200;
+}
+
+.action {
+  width: 100%;
+  font-weight: 200;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.btn, .subbtn {
+  width: 90px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.list-container {
+  max-width: 1000px;
+  text-align: center;
+  width: auto;
+  padding: 0 0;
+  margin: auto;
+}
+
+.list-functionality {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.list-sort, .search-bar {
+  margin: 0 68px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.list-sort label,
+.search-bar label {
+  font-size: 18px;
+}
+
+.list-sort select,
+.search-bar input {
+  padding: 5px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.list-holder{
+  max-width: 1000px;
+  /* margin: auto; */
+  /* margin-top: 50px; */
+  /* border: 2px solid white; */
+  width: auto;
+  padding: 10px;
+  /* display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+  flex-wrap: wrap; */
+}
+
+.list-holder.grid-container{
+  display: grid;
+  gap: 60px;
+  grid-template-columns: repeat(auto-fill, 285px);
+  /* flex-wrap: wrap; */
+  /* grid-auto-columns: auto; */
+  /* grid-auto-flow: row; */
+}
+
+.list-card{
+  width: 250px;
+  /* border: 2px solid white; */
+  position: relative;
+  box-shadow: 0px 0px 15px 7px #333146;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex-wrap: wrap;
+  /* align-items: start; */
+  padding: 10px;
+  border-radius: 10px;
+  text-align: start;
+  background: rgb(30, 23, 58);
+  color: rgb(255, 255, 255);
+  word-wrap: break-word;
+}
+
+.list-card hr{
+  width: 220px;
+  text-align: center;
+}
+
+.list-card h3, .list-card h5, .list-card p, .list-card .btn{
+  max-width: 230px;
+  margin: 15px 0;
+}
+
+.list-card p{
+  font-weight: 500;
+}
+
+.list-card h3{
+  /* border: 2px solid red; */
+  max-width: 130px;
+  width: auto;
+}
+
+.btn, .subbtn{
+  padding: 5px;
+  width: 100px;
+  background-color: rgb(13, 223, 226);
+  margin-bottom: 3px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.list-card .btn{
+  position: absolute;
+  top: 8px;
+  right: 18px;
+  width: 40px;
+  font-size: 20px;
+  padding: 0;
+}
+
+.list-card .star{
+  right: 65px;
+  color: white;
+  top: 0px;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 30px;
+}
+
+.list-card .star.active{
+  color: yellow;
+}
+
+.hide{
+  display: none;
+}
+
+.emptyFormToast{
+  display: none;
+  background: #ffffff;
+  position: fixed;
+  border: 1px solid red;
+  text-align: center;
+  left: 50%;
+  /* transform: translateY(90px); */
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  bottom: 20px;
+  transition: all 0.5s;
+}

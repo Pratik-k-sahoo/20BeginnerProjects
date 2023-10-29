@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do LIST</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="logo">
+        <img src="data/notes.png" alt="TODO LIST">
+      </div>
+      <div class="heading">e-TODO STORE</div>
+    </div>
+  </header>
+
+  <div class="welcome">
+    <h2>Welcome to Mo-List.com</h2>
+  </div>
+
+  <div class="container">
+    <div class="input-container">
+      <div class="title-container">
+        <label for="title">Please add your list Title</label>
+        <input type="text" placeholder="Enter the title" id="title" class="title">
+      </div>
+
+      <div class="action-container">
+        <label for="action">Enter the work To do</label>
+        <textarea name="action" id="action" placeholder="Enter the action To be Done" class="action" cols="30" rows="10"></textarea>
+        <button id="subbtn" class="btn">Add to List</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="list-container">
+    <div class="list-heading">
+      <h2>Your To-Do List</h2>
+    </div>
+    <div class="list-functionality">
+      <div class="list-sort">
+        <label for="sorting">Sort List by</label>
+        <select name="sorting" id="sorting" class="sort" onchange="sortNotes(this.value)">
+          <option value="dateAscending">Date Ascending</option>
+          <option value="dateDescending">Date Descending</option>
+          <option value="importance">Importance</option>
+          <option value="wordCount">Word count</option>
+        </select>
+      </div>
+      <div class="search-bar">
+        <label for="search">Search</label>
+        <input type="text" id="search" class="search" placeholder="Enter some letters to search">
+      </div>
+    </div>
+
+    <div class="list-holder" id="list-holder">
+      <!-- <div class="list-card">
+        <h3>TITLE</h3>
+        <h5>Posted on 29/10/2023 - 1:47:51 AM</h5>
+        <hr>
+        <h4>List Actions</h4>
+        <button class="btn">Delete List</button>
+      </div> -->
+      Nothing to show! Use "Add a List" section above to add TO DO LIST.
+    </div>
+  </div>
+
+  <div class="emptyFormToast" id="emptyFormToast">
+    List is Empty!
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
