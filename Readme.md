@@ -2,9 +2,9 @@
 
 20 projects in 35days Challenge <br>
 <br>
-<a href="https://pratikk-portfolio.netlify.app/" target="_blank">#1 Portfolio</a> <br>
-<a href="https://pratikk-e-todo-list.netlify.app/" target="_blank">#2 To do list</a> <br>
-<a href="https://pratikk-weather-app.netlify.app/" target="_blank">#3 Weather App</a> <br>
+#1 <a href="https://pratikk-portfolio.netlify.app/" target="_blank">Portfolio</a> <br>
+#2 <a href="https://pratikk-e-todo-list.netlify.app/" target="_blank">To do list</a> <br>
+#3 <a href="https://pratikk-weather-app.netlify.app/" target="_blank">Weather App</a> <br>
 #4 [Calculator] <br>
 #5 [Blog website] <br>
 #6 [Timer/Stopwatch] <br>
